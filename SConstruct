@@ -685,7 +685,7 @@ if nix:
                          "-Winvalid-pch"] )
     # env.Append( " -Wconversion" ) TODO: this doesn't really work yet
     if linux:
-        env.Append( CCFLAGS=["-pipe"] ) #env.Append( CCFLAGS=["-Werror", "-pipe"] )
+        env.Append( CCFLAGS=["-pipe","-fpermissive"] ) #env.Append( CCFLAGS=["-Werror", "-pipe"] )
         if not has_option('clang'):
             env.Append( CCFLAGS=["-fno-builtin-memcmp"] ) # glibc's memcmp is faster than gcc's
 
