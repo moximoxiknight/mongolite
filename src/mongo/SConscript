@@ -88,6 +88,8 @@ commonFiles = [ "pch.cpp",
                 "client/model.cpp",
                 "client/syncclusterconnection.cpp",
                 "client/distlock.cpp",
+		"client/mongo_client_lib.cpp",
+		
                 ]
 
 env.StaticLibrary('mongocommon', commonFiles,
