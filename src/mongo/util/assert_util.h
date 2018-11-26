@@ -1,9 +1,10 @@
 // assert_util.h
-//Knight 11.06
+
+//Knight: 11.26
+
+#define MONGO_EXPOSE_MACROS 1
 
 #pragma once
-
-#define MONGO_EXPOSE_MACROS
 
 #include <iostream>
 #include <typeinfo>
