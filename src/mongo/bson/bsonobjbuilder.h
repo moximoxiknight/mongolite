@@ -21,9 +21,11 @@
 #include "mongo/util/log.h"
 #endif
 
-
 //Knight : add verify
 #define verify mongo::MONGO_verify
+#define massert mongo::MONGO_massert
+#define uassert mongo::MONGO_uassert
+
 
 namespace mongo {
 
